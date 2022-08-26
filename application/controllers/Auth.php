@@ -19,7 +19,8 @@ class Auth extends CI_Controller{
 		]);
 		$this->load->library([
 			'Response',
-			'form_validation'
+			'form_validation',
+			'grocery_CRUD'
 		]);
 	}
 
@@ -77,8 +78,9 @@ class Auth extends CI_Controller{
 	}
 
 	public function user_mantenimiento(){
-		$users=GT::query('users');
+		$users = new grocery_CRUD();
 		$users->set_theme('datatables');
+		$users->set_table('users');
 		$users->set_subject('Registro');
 		$users->required_fields('email');
 		$users->columns('email', 'password');
