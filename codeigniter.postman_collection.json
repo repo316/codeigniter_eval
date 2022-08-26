@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "7fbf1b6c-42c1-4208-a608-c2c68407caf7",
+		"name": "codeigniter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9053605"
+	},
+	"item": [
+		{
+			"name": "Registro",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"lsolis35@test.cr\",\r\n    \"password\": \"1234567899\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/codeigniter_eval/index.php/auth/registro",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"codeigniter_eval",
+						"index.php",
+						"auth",
+						"registro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"lsolis35@test.cr\",\r\n    \"password\": \"1234567899\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/codeigniter_eval/index.php/auth/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"codeigniter_eval",
+						"index.php",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Conversation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uid\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/codeigniter_eval/index.php/activity/get_conversations",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"codeigniter_eval",
+						"index.php",
+						"activity",
+						"get_conversations"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
